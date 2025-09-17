@@ -1,0 +1,10 @@
+#CHECK MONTH DAYS
+choice=int(input("Enter the month(1-12):"))
+if(choice==2):
+    print("28 or 29 days")
+elif(choice==1,3,5,7,8,10,12):
+    print("31 days")
+elif(choice==4,6,9):
+    print("30 days")
+else:
+    print("invalid")
