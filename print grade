@@ -1,0 +1,18 @@
+#CHECK GRADE USING MARKS
+marks=int(input("Enter your marks:"))
+if(marks>89):
+    print("A")
+    print("Excellent")
+elif(marks>69 and marks<91):
+    print("B")
+    print("Very Good")
+elif(marks>49 and marks<71):
+    print("C")
+    print("Good")
+elif(marks>39 and marks<51):
+    print("D")
+    print("Need improvement")
+elif(marks<40 and marks>=0):
+    print("FAIL")
+else:
+    print("Check the marks")
