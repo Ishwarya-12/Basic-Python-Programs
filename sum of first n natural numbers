@@ -1,0 +1,8 @@
+#sum of first n natural numbers
+n=int(input("Enter number:"))
+print("For first n even numbers")
+even=n*(n+1)
+print(even)
+print("For first n odd numbers")
+odd=n**2
+print(odd)
