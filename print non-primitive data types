@@ -1,0 +1,10 @@
+my_set={1,2,3}
+my_list=[1,2,3]
+my_str="hello"
+my_tuple=(1,2,3)
+my_dict={10:'ABC',20:'ID'}
+print("SET IS:",my_set)
+print("LIST IS:",my_list)
+print("STRING IS:",my_str)
+print("TUPLE IS:",my_tuple)
+print("DICTIONARY IS :",my_dict)
