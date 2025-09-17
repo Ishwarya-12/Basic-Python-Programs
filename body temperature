@@ -1,0 +1,9 @@
+temp=float(input("Enter body temperature:"))
+if(temp==36.8):
+    print("Normal body temperature")
+elif(temp<36.8):
+    print("cold")
+elif(temp>36.8):
+    print("fever")
+else:
+    print("error")
