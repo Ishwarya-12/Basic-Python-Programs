@@ -1,0 +1,9 @@
+#ARITHMETIC OPERATORS
+a=float(input("Enter num1:"))
+b=float(input("Enter num2:"))
+print(a+b)
+print(a-b)
+print(a*b)
+print(a/b)
+print(a//b)
+print(a%b)
