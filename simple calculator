@@ -1,0 +1,15 @@
+#CALCULTOR
+num1=int(input("Enter number:"))
+num2=int(input("ENter number:"))
+print("Choose the operation(+,-,*,/)")
+choice=input("enter the operator")
+if(choice=='+'):
+    print("Sum is:",num1+num2)
+elif(choice=='-'):
+    print("difference is:",num1-num2)
+elif(choice=='*'):
+    print("product is:",num1*num2)
+elif(choice=='/'):
+    print("quotient is:",num1/num2)
+else:
+    print("Invalid choice")
