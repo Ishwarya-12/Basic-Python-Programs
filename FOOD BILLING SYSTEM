@@ -1,0 +1,96 @@
+import datetime
+print("*** WELCOME TO PARADISE HOTEL ***")
+print("*We are happy to have you here*")
+a=str(input("Are you a regular customer here and have the loyalty card(YES/NO)"))
+user="PARADISE_CST"
+pwd=1212
+loyalty="NO"
+payment=300
+today = datetime.date.today()
+if a=='YES':
+    print("Enter your username ID and Password")
+    username=str(input("Enter username:"))
+    password=int(input("Enter password:"))
+    while True:
+        if(username==user and password==pwd):
+            loyalty="YES"
+            print("You can avail 20% off on all Lunch meals + you get a free hugebasket voucher INR 100")
+            break
+        else:
+            print("Login Fail.Check your username ID/password")
+            print("Enter your username ID and Password")
+            username=str(input("Enter username:"))
+            password=int(input("Enter password:"))
+elif a=='NO':
+    choice=input("We have a loyalty card that offers discounts on food purchases.would you like to sign up?(YES/NO)")
+    if choice == 'YES':
+        name = input("YOUR NAME: ")
+        while True:
+            mobile = input("YOUR MOBILE NUMBER: ")
+            if mobile.isdigit() and len(mobile) == 10:
+                break
+            else:
+                print("Please enter a valid 10-digit mobile number.")
+        print("Thank you, {}! for signing up. Please pay 300 rupees to avail your card".format(name))
+        pay=int(input("Enter the amount:"))
+        while True:
+            if pay==payment:
+                print("Payment done.You have purchased the card on {} and is available for the next 3 months".format(today))
+                loyalty="YES"
+                break
+            else:
+                print("Check your payment status")
+                pay = int(input("Enter the correct amount: "))
+    elif choice == 'NO':
+        print("No worries! Enjoy your food :).")
+else:
+    print("Invalid choice. Please select YES or NO.")
+print("""Choose your menu
+           1.Breakfast
+           2.Lunch Meals
+           3.Snack options
+           4.Beverages
+           5.EXIT""")
+your_choice=int(input("Enter your choice(1-5):"))
+
+if your_choice==1:
+    print("You have choosen Breakfast")
+    print("Each item is only 50 rupees, please pay at the counter:)")
+elif your_choice==2:
+     print("You have choosen Lunch Meals")
+     print("Each meal is only 150 rupees, please pay at the counter:)")
+elif your_choice==3:
+     print("You have choosen Snacks")
+     print("Each snack is only 40 rupees, please pay at the counter:)")
+elif your_choice==4:
+     print("You have choosen Beverages")
+     print("Each Beverage is only 60 rupees, please pay at the counter:)")
+else:
+     print("Exiting")
+if 1<= your_choice <= 4:
+    qty=int(input("Quantity="))
+    if your_choice==1:
+      total=qty*50
+      print("Total=",total)
+    elif your_choice==2:
+        if loyalty=="YES":
+            total=qty*150
+            offer=0.20*total
+            dis=total-offer
+            print("Thank you for using the loyalty card , you get 20% off on our lunch meals")
+            print("Total=",dis)
+        else:
+            total=qty*150
+            print("Total=",total)
+    elif your_choice==3:
+      total=qty*40
+      print("Total=",total)
+    elif your_choice==4:
+      total=qty*60
+      print("Total=",total)
+elif your_choice == 5:
+    pass 
+else:
+    print("Invalid choice for quantity calculation.")
+
+print("Thank you for visiting us :)")
