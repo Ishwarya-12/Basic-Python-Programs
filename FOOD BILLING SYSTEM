@@ -35,14 +35,14 @@ elif a=='NO':
         pay=int(input("Enter the amount:"))
         while True:
             if pay==payment:
-                print("Payment done.You have purchased the card on {} and is available for the next 3 months".format(today))
+                print("Payment done.You have purchased the card on {} and is available for the next 2 months".format(today))
                 loyalty="YES"
                 break
             else:
                 print("Check your payment status")
                 pay = int(input("Enter the correct amount: "))
     elif choice == 'NO':
-        print("No worries! Enjoy your food :).")
+        print("No worries! Enjoy your food :)")
 else:
     print("Invalid choice. Please select YES or NO.")
 print("""Choose your menu
