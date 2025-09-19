@@ -14,7 +14,7 @@ if a=='YES':
     while True:
         if(username==user and password==pwd):
             loyalty="YES"
-            print("You can avail 20% off on all Lunch meals + you get a free hugebasket voucher INR 100")
+            print("You can avail 20% off on all Lunch meals + you get a free hugebasket voucher INR 50")
             break
         else:
             print("Login Fail.Check your username ID/password")
