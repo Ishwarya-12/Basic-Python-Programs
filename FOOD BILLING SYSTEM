@@ -35,7 +35,7 @@ elif a=='NO':
         pay=int(input("Enter the amount:"))
         while True:
             if pay==payment:
-                print("Payment done.You have purchased the card on {} and is available for the next 2 months. /n You get 20% off on all our lunch meals+ a free hugebasket voucher INR 50".format(today))
+                print("Payment done.You have purchased the card on {} and is available for the next 2 months.You get 20% off on all our lunch meals+ a free hugebasket voucher INR 50".format(today))
                 loyalty="YES"
                 break
             else:
